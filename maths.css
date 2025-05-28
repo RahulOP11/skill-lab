@@ -1,0 +1,15 @@
+#ra1 {
+     background-color: darkcyan ;
+     border: 5px solid black;
+     margin-top: 200px;
+     flex: content;
+     width: 1344px;
+     height:auto;
+
+
+}
+
+
+#div1:hover{
+     background-color: bisque;
+}

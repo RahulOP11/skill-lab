@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen</title>
+</head>
+<body>
+
+    <h1>Wellcome to Canteen Billing system</h1>
+
+    <div id="rop11"><label for="">1 plate Idli Rs 20</label>
+        <input type="number" name="" id="idli"><br><br>
+        <label for="">1 plate Rice Rs 40</label>
+        <input type="number" name="" id="rice"><br><br>
+        <label for="">1 plate poori Rs 50</label>
+        <input type="number" name="" id="poori"><br><br>
+        <label for="">1 plate mudde Rs 30</label>
+        <input type="number" name="" id="mudde"><br><br>
+        <label for="">1 plate Curd rice Rs 40</label>
+        <input type="number" name="" id="crice"><br><br>
+        <label for="">1 plate Masala puri Rs 30</label>
+        <input type="number" name="" id="mpuri"><br><br>
+        <label for="">1 plate dahi puri  Rs 30</label>
+        <input type="number" name="" id="dpuri"><br><br>
+        <label for="">1 plate bhel puri Rs 30</label>
+        <input type="number" name="" id="bpuri"><br><br>
+        <label for="">1 plate parota Rs 45</label>
+        <input type="number" name="" id="parota"><br><br></div>
+
+    
+    <button onclick="bill()">SUBMIT</button>
+    <style> 
+
+        *{
+            background-color: rgb(240, 234, 234);
+        }
+
+        #rop11{
+             background-color: rgb(110, 200, 228);
+             height: auto;
+             width: auto;
+             border: 5px solid black;
+             text-align: center;
+             margin-left: 200px;
+             margin-right: 200px; 
+             box-shadow:  0px 0px 10px black;    
+        }
+
+        rop11:hover{
+            background-color: rgb(50, 218, 218);
+            border: 10px;
+            box-shadow: 10% black;
+        }
+
+
+    </style>
+
+    <script>
+        function bill(){
+            var idli = document.getElementById("idli").value;
+            var rice = document.getElementById("rice").value;
+            var poori = document.getElementById("poori").value;
+            var mudde = document.getElementById("mudde").value;
+            var crice = document.getElementById("crice").value;
+            var mpuri = document.getElementById("mpuri").value;
+            var dpuri = document.getElementById("dpuri").value;
+            var bpuri= document.getElementById("bpuri").value;
+            var parota = document.getElementById("parota").value;
+    
+            var total = idli*20 + rice*40 + poori*30 + mudde*30 + crice*40 + mpuri*30 + dpuri*30 + bpuri*30 + parota*45
+            alert(total);              
+        }
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Predictor</title>
+    <link rel="stylesheet" href="maths.css">
+
+</head>
+<body>
+
+    <div id="ra1">
+        <h1>Result predictor</h1>
+
+        <label for="">Name:</label>
+        <input type="text" name="" id="uname" placeholder="enter your name">
+        <button onclick="per()">Check </button>
+        <p id="res"></p>
+    </div>
+  <div id="div1"></div>
+    <script>
+        function per(){
+           var name = document.getElementById("uname").value;
+           var per = Math.random()*100;
+           var res = document.getElementById("res");
+           res.innerHTML = " The result is "+ per;
+        }
+    </script> 
+</body>
+</html>

@@ -1,0 +1,26 @@
+#rop {
+    background-color: rgb(243, 140, 15);
+    text-align: center;
+    width: 500px;
+    margin-left: 400px;
+    margin-top: 300px;
+    margin-right: 15px;
+ 
+    
+} 
+
+
+body{
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/elections.avif);
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+
+h1:hover{
+
+    background-color: bisque;
+    border-radius: 5%;
+     
+}
